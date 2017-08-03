@@ -1,0 +1,36 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  
+}
+* {
+  box-sizing: border-box;
+}
+
+.blok {
+  height: 80%;
+  background-image: url("../images/maxresdefault.jpg");
+  background-position: center center;
+  background-size: cover; 
+}
+.game
+{
+	width:100%;
+}
+p
+{
+	color:yellow;
+	font-size: 24px;
+	margin-top:30px;
+	margin-left: 30px;
+	padding:10px;
+
+}
+h1
+{
+	color:#fff;
+	font-size: 70px;
+	margin-top:50px;
+	margin-left: 450px;
+	padding:10px;	
+}
