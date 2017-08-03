@@ -1,4 +1,4 @@
- var wins = 0;
+    var wins = 0;
     var losses = 0;
     var guessesLeft = 9;
     var guessesUsed = []; 
@@ -8,7 +8,13 @@
         var userGuess = String.fromCharCode(event.keyCode).toLowerCase(); 
         var computerGuess = computerChoices[Math.floor(Math.random()*computerChoices.length)]; 
         guessesUsed.push(userGuess); 
-        if (userGuess === computerGuess) {
+        if (event.keyCode < 65 || event.keyCode > 90) {
+            alert("use valid letter");
+            guessesLeft = 9; 
+            guessesUsed.length = 0; //resets the counter back to zero
+
+        }
+        else if (userGuess === computerGuess) {
             wins++;
             alert("You Won!");
             guessesLeft = 9; 
