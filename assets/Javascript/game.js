@@ -14,13 +14,13 @@
             guessesLeft = 9; 
             guessesUsed.length = 0; 
         }
-        else if (guessesLeft === 0){
+        else if (guessesLeft === 1){
             losses++;
             alert("You lost, try again!");
             guessesLeft = 9;
             guessesUsed.length = 0;
         }
-        else if (userGuess !== computerGuess){
+        else if (userGuess != computerGuess){
             guessesLeft--; 
         }  
            
